@@ -331,3 +331,28 @@ body {
     transform: translate(-50%, -50%) scale(2.1);
   }
 }
+
+// Text styling
+.flower-text {
+  position: absolute;
+  top: 750px;
+  left: 40%;
+  transform: translateX(-50%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #d52d58;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 20px rgba(213, 45, 88, 0.3);
+  animation: textGlow 3s ease-in-out infinite;
+}
+
+@keyframes textGlow {
+  0%, 100% {
+    text-shadow: 0px 0px 20px rgba(213, 45, 88, 0.3);
+  }
+  50% {
+    text-shadow: 0px 0px 40px rgba(213, 45, 88, 0.6);
+  }
+}

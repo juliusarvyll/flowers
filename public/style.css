@@ -153,22 +153,22 @@ body {
   transition: all 0.5s ease-out;
 }
 .deadPetals > div:nth-child(1) {
-  left: 210px;
+  left: 153px;
   transform: rotate(-30deg);
   animation: falling 20s 4s ease-in-out infinite;
 }
 .deadPetals > div:nth-child(2) {
-  left: 226px;
+  left: 182px;
   transform: rotate(-30deg);
   animation: falling 20s 8s ease-in-out infinite;
 }
 .deadPetals > div:nth-child(3) {
-  left: 133px;
+  left: 160px;
   transform: rotate(-30deg);
   animation: falling 20s 12s ease-in-out infinite;
 }
 .deadPetals > div:nth-child(4) {
-  left: 206px;
+  left: 126px;
   transform: rotate(-30deg);
   animation: falling 20s 16s ease-in-out infinite;
 }
@@ -315,6 +315,29 @@ body {
 @media (max-width: 320px) {
   .container {
     transform: translate(-50%, -50%) scale(2.1);
+  }
+}
+.flower-text {
+  position: absolute;
+  top: 750px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #d52d58;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 20px rgba(213, 45, 88, 0.3);
+  animation: textGlow 3s ease-in-out infinite;
+}
+
+@keyframes textGlow {
+  0%, 100% {
+    text-shadow: 0px 0px 20px rgba(213, 45, 88, 0.3);
+  }
+  50% {
+    text-shadow: 0px 0px 40px rgba(213, 45, 88, 0.6);
   }
 }
 
