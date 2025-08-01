@@ -1,39 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jotter Pad (Tailwind)</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Font -->
+  <style>
+    @font-face {
+      font-family: 'ckjot';
+      src: url('ckjot.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'ckjot', Arial, sans-serif;
+    }
+  </style>
 </head>
-<div class="container">
-	<div class="glass">
-    <div class="shine"></div>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+  <!-- Relative wrapper -->
+  <div class="relative w-full max-w-5xl">
+
+    <!-- Background Images -->
+    <img src="hipper.png" class="absolute left-0 w-40 opacity-80" style=" top: -110px;" />
+    <img src="skate.png" class="absolute w-40 opacity-80" style=" bottom: -200px; right: -10px" />
+    <img src="museum.png" class="absolute w-40 opacity-70" style=" top: -145px; right: 10px" />
+    <img src="under.png" class="absolute w-40 opacity-70" style=" bottom: -200px; left: -80px" />
+    <img src="hoop.png" class="absolute w-40 opacity-70" style=" top: -145px; left: 100px" />
+    <!-- Jotter Pad -->
+    <div class="relative w-full max-w-xl mx-auto bg-[url('https://asullivan.co.uk/web_images/jotter_white_compressed.jpg')] bg-no-repeat bg-cover bg-center bg-blend-lighten shadow-xl border-t border-b border-white rounded-xl p-8 sm:p-10 text-gray-800">
+      <h1 class="text-3xl underline underline-offset-4 mb-6 pl-10">pag aatubili</h1>
+      <p class="text-lg leading-loose space-y-4 pl-10">
+        Nagdiriwang ang mga anghel tuwing kasama kita.
+Maaaring ikamatay ko, makita ka lang sa ’king tabi.
+<br>
+Kalokohan mang ’di ka isipin, <br>
+Kasuklám-suklam sa ’king kalooban, kung ’di lilinawin.
+<br><br>
+Ikaw ang hahanaphanapin.
+<br>
+<br>
+<br>
+aqsijuliuspogs123
+      </p>
+    </div>
+
   </div>
-	<div class="thorns">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
-	<div class="leaves">
-		<div></div>
-		<div></div>
-    <div></div>
-    <div></div>
-	</div>
-	<div class="petals">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
-  <div class="deadPetals">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <div class="flower-text">flowers for cyril hehe ;></div>
-</div>
+</body>
+
+</html>
